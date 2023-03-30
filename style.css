@@ -13,19 +13,19 @@
     background-color: black;
     height: 150px;
 }
-.menu-top ul{
+#menu{
     display: flex;
     list-style: none;
     gap: 1rem;
 }
-.menu-top a {
+#nav a {
     text-decoration: none;
     color: aliceblue;
     font-family: sans-serif;
     font-size: 1rem;
     padding: .5rem;
 }
-.menu-top a:hover{
+#nav a:hover{
     color: #4ad1ea;
     background: rgba(91, 101, 105, 0.308);
 }
@@ -35,8 +35,43 @@
     font-size: 3rem;
 }
 
-/* mobile */
+#btn-mobile{
+    display: none;
+}
 
-@media screen (max-width: 600px;){
-    
+@media(max-width: 600px) {
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    #menu{
+       display: block;
+       position: absolute;
+       width: 100%;
+       top: 140px;
+       right: 0px;
+       background: black;
+       height: 0;
+       transition: .6s;
+       z-index: 999;
+       overflow-y: hidden;
+       visibility: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 140px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a{
+        display: block;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+    }
 }
