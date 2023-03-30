@@ -23,8 +23,7 @@
     color: aliceblue;
     font-family: sans-serif;
     font-size: 1rem;
-    display: block;
-    gap: 3rem;
+    padding: .5rem;
 }
 .menu-top a:hover{
     color: #4ad1ea;
@@ -34,4 +33,10 @@
     color: aliceblue;
     font-family: 'Audiowide', cursive;
     font-size: 3rem;
+}
+
+/* mobile */
+
+@media screen (max-width: 600px;){
+    
 }
