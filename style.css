@@ -42,12 +42,14 @@
 @media(max-width: 600px) {
     #btn-mobile{
         display: flex;
+        align-items: center;
         padding: .5rem 1rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
         border: none;
         background: none;
         color: aliceblue;
         cursor: pointer;
+        gap: .5rem;
     }
     #menu{
        display: block;
@@ -72,6 +74,31 @@
         display: block;
         padding: 1rem 0;
         margin: 0 1rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        width: 20px;
+        display: block;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+        transition: .4s;
+    }
+    #nav.active #hamburguer{
+        border-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+
     }
 }
