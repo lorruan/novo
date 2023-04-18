@@ -105,6 +105,19 @@ body{
         top: -7px;
 
     }
+    .secao1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .secao1 .direito{
+        width: 100%;
+        justify-content: center;
+    }
+    .secao1 .esquerdo{
+        width: 100%;
+        justify-content: center;
+    }
 }
 /* seção 1 */
 body{
@@ -128,12 +141,10 @@ body{
     height: 500px;
 }
 .secao1 .esquerdo{
-    background-color: aliceblue;
     width: 40%;
     margin: 120px auto 10px auto;
 }
 .secao1 .direito{
-    background-color: aliceblue;
     width: 60%;
     margin: 120px auto 10px auto;
 }
