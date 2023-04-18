@@ -44,6 +44,9 @@ body{
 }
 
 @media(max-width: 600px) {
+    body{
+        overflow-x: hidden;  
+    }
     #btn-mobile{
         display: flex;
         align-items: center;
