@@ -10,20 +10,30 @@
     <script defer src="app.js"></script>
 </head>
 <body>
-    <header id="cabe">
-    <div class="img">NEW TEC</div>
-    <nav id="nav">
-        <button id="btn-mobile" aria-expanded="false">Menu
-            <span id="hamburguer"></span>
-        </button>
-        <ul id="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre</a></li>
+    <header class="header">
+        <a href="/" class="logo">New Tec 🐅</a>
+        <nav class="nav">
+          <button
+            class="btn-menu"
+            aria-label="Abrir Menu"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu<span class="hamburger"></span>
+          </button>
+          <!-- <input type="checkbox" id="checkbox" class="checkbox" />
+          <label for="checkbox" class="label-menu"
+            >Menu<span class="hamburger"></span
+          ></label> -->
+          <ul class="menu" id="menu" role="menu">
+            <li><a href="/">Início</a></li>
+            <li><a href="/">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-    </header>
+          </ul>
+        </nav>
+      </header>
 
     <section id="servicos">
         <div class="content">
