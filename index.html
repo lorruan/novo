@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>New Tec - Assistência Técnica</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <header id="cabe">
@@ -23,7 +24,22 @@
         </ul>
     </nav>
     </header>
-   
+    
+    <section id="contato">
+        <form
+      action="https://formsubmit.co/ajax/lo_pedro@hotmail.com"
+      method="POST"
+      data-form
+    >
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" required></textarea>
+      <button type="submit" data-button>Enviar</button>
+    </form>
+    </section>
     
     
     <script src="menu.js"></script>
