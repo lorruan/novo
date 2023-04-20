@@ -109,6 +109,23 @@ body{
 
     }
 }
+
+/* seção SERVIÇOS */
+#servicos{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 120px 10px 20px 10px;
+    align-items: center;
+}
+.content{
+    margin-left: 20px;
+}
+#servicos img{
+    border-radius: 40px 0 40px 0;
+    width: 100%;
+}
+
 /* seção CONTATO */
 #contato{
     min-height: 100vh;
