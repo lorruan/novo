@@ -127,6 +127,16 @@ body{
 }
 
 /* seção CONTATO */
+@media(max-width: 600px) {
+    input,
+    textarea,
+    button {
+        max-width: 250px;
+    }
+    form {
+        place-items: center;
+    } 
+}
 #contato{
     min-height: 100vh;
   display: grid;
