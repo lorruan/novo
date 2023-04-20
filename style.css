@@ -108,56 +108,5 @@ body{
         top: -7px;
 
     }
-    .secao1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .secao1 .direito{
-        width: 100%;
-        justify-content: center;
-    }
-    .secao1 .esquerdo{
-        width: 100%;
-        justify-content: center;
-    }
 }
 /* seção 1 */
-body{
-    margin: 0;
-    padding: 0;
-}
-.secao1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #323946;
-    width: 100vw;
-    height: 500px;
-}
-.secao2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1f242d;
-    width: 100vw;
-    height: 500px;
-}
-.secao1 .esquerdo{
-    width: 40%;
-    margin: 120px auto 10px auto;
-}
-.secao1 .direito{
-    width: 60%;
-    margin: 120px auto 10px auto;
-}
-.secao1 .esquerdo img{
-    width: 300px;
-    border-radius: 0 30px 0 30px;
-    border: solid 2px #4ad1ea;
-    box-shadow: 10px 10px 10px 5px black;   
-}
-
-.secao1 .direito img{
-    width: 200px;
-}
