@@ -114,18 +114,38 @@ class FormSubmit {
 
 
   /* CARTA 
-  const card = document.querySelector("#card")
-  card.addEventListener("click", (e)=>{card.classList.toggle("flip")}) */
+   
 
-  card = document.querySelector(".card").querySelectorAll("card");
+
+  const revelcard = ({ target }) => {
+    target.parentNode.classList.add('revel-card')
+  }
   
-  card.forEach(Element => {
-    Element.addEventListener("click", function(){
-      card.forEach(card=>card.classList.remove("active"))
 
-      this.classList.add("active")
-    })
-  })
+  const grid = document.querySelector('.grid');
+
+  const createcard = () => {
+    const card = document.createElement('div');
+    const front = document.createElement('div');
+    const back = document.createElement('div');
+
+    card.className = 'card';
+    front.className = 'face front';
+    back.className = 'face back';
+
+    card.appendChild(front);
+    card.appendChild(back);
+
+    grid.appendChild(card)
+
+  card.addEventListener('click', revelcard);
+  }
+
+  createcard();
+*/
+  
+
+  
 
 
   /* active menu */
