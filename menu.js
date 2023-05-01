@@ -113,6 +113,28 @@ class FormSubmit {
   formSubmit.init();
 
 
-  /* CARTA */
+  /* CARTA 
   const card = document.querySelector("#card")
-  card.addEventListener("click", (e)=>{card.classList.toggle("flip")}) 
+  card.addEventListener("click", (e)=>{card.classList.toggle("flip")}) */
+
+  card = document.querySelector(".card").querySelectorAll("card");
+  
+  card.forEach(Element => {
+    Element.addEventListener("click", function(){
+      card.forEach(card=>card.classList.remove("active"))
+
+      this.classList.add("active")
+    })
+  })
+
+
+  /* active menu */
+  navbar = document.querySelector(".nav").querySelectorAll("a");
+  
+  navbar.forEach(Element => {
+    Element.addEventListener("click", function(){
+      navbar.forEach(nav=>nav.classList.remove("active"))
+
+      this.classList.add("active")
+    })
+  })
