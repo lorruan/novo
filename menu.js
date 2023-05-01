@@ -111,3 +111,8 @@ class FormSubmit {
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
   });
   formSubmit.init();
+
+
+  /* CARTA */
+  const card = document.querySelector("#card")
+  card.addEventListener("click", (e)=>{card.classList.toggle("flip")}) 
